@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saif Mohsen — Cybersecurity-Focused Computer Science Student</title>
+<meta name="description" content="Saif Mohsen is a Computer Science student at Nile University specializing in Biomedical Informatics, developing skills in network security, vulnerability assessment, and penetration testing.">
+<meta name="color-scheme" content="dark light">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Saif Mohsen — Cybersecurity-Focused CS Student">
+<meta property="og:description" content="Computer Science student at Nile University focused on Network Security, Vulnerability Assessment, and Penetration Testing.">
+<meta property="og:type" content="website">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0e17'/%3E%3Cpath d='M16 5 L26 9.5 V16 C26 22.5 21.5 26.8 16 28 C10.5 26.8 6 22.5 6 16 V9.5 Z' fill='none' stroke='%232dd4bf' stroke-width='1.8'/%3E%3Cpath d='M12 16.5 L14.7 19.2 L20.5 12.8' fill='none' stroke='%232dd4bf' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-theme="">
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ========== NAV ========== -->
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a href="#hero" class="brand" aria-label="Saif Mohsen — home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="30" height="30"><path d="M16 4 L27 9 V16.5 C27 23.5 22 28.2 16 29.5 C10 28.2 5 23.5 5 16.5 V9 Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 16.6 L14.2 19.8 L21 12.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="brand-text">Saif Mohsen</span>
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark and light theme" title="Toggle theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><g stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2.5v2.4"/><path d="M12 19.1v2.4"/><path d="M4.6 4.6l1.7 1.7"/><path d="M17.7 17.7l1.7 1.7"/><path d="M2.5 12h2.4"/><path d="M19.1 12h2.4"/><path d="M4.6 19.4l1.7-1.7"/><path d="M17.7 6.3l1.7-1.7"/></g></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      </button>
+      <a href="assets/cv/Saif-Mohsen-CV.pdf" download class="btn btn-ghost btn-small cv-link">Resume</a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile nav panel -->
+  <div class="mobile-nav" id="mobile-nav">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="mobile-nav-socials">
+      <a href="https://github.com/2SaifMohsenn" target="_blank" rel="noopener" class="social-link" aria-label="GitHub profile">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.85.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.05 0-1.12.39-2.03 1.03-2.74-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.32 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.71 1.03 1.62 1.03 2.74 0 3.92-2.34 4.78-4.57 5.04.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.5A10.27 10.27 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z" fill="currentColor"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/saif-mohsen-026265360" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn profile">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3.5a1.96 1.96 0 1 0 0 3.92 1.96 1.96 0 0 0 0-3.92ZM20.44 20h-3.37v-5.9c0-1.4-.03-3.21-1.96-3.21-1.96 0-2.26 1.53-2.26 3.11V20H9.48V8.5h3.24v1.57h.05c.45-.85 1.55-1.75 3.2-1.75 3.42 0 4.05 2.25 4.05 5.18V20Z" fill="currentColor"/></svg>
+      </a>
+      <a href="mailto:s.mohsen2389@nu.edu.eg" class="social-link" aria-label="Send an email">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+<div class="nav-scrim" id="nav-scrim"></div>
+
+<main id="main">
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-glow"></div>
+      <svg class="hero-graph" viewBox="0 0 640 640" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+        <g class="hero-graph-lines" stroke="currentColor" stroke-width="1" fill="none">
+          <path d="M90 120 L230 200 L 90 320" />
+          <path d="M230 200 L 400 140" />
+          <path d="M230 200 L 340 320" />
+          <path d="M340 320 L 480 260" />
+          <path d="M340 320 L 300 470" />
+          <path d="M480 260 L 560 150" />
+          <path d="M480 260 L 570 380" />
+          <path d="M90 320 L 200 460" />
+          <path d="M200 460 L 300 470" />
+          <path d="M300 470 L 420 520" />
+        </g>
+        <g class="hero-graph-nodes" fill="currentColor">
+          <circle cx="90" cy="120" r="4" />
+          <circle cx="230" cy="200" r="5.5" />
+          <circle cx="400" cy="140" r="4" />
+          <circle cx="90" cy="320" r="4" />
+          <circle cx="340" cy="320" r="5.5" />
+          <circle cx="480" cy="260" r="4.5" />
+          <circle cx="560" cy="150" r="4" />
+          <circle cx="570" cy="380" r="4" />
+          <circle cx="200" cy="460" r="4" />
+          <circle cx="300" cy="470" r="5" />
+          <circle cx="420" cy="520" r="4" />
+        </g>
+      </svg>
+    </div>
+
+    <div class="container hero-inner">
+      <p class="eyebrow reveal" data-reveal>Cybersecurity-Focused CS Student</p>
+      <h1 class="hero-title reveal" data-reveal data-reveal-delay="1">Saif Mohsen</h1>
+      <p class="hero-role reveal" data-reveal data-reveal-delay="2">Computer Science Student <span class="dot-sep">·</span> Cybersecurity Enthusiast</p>
+      <p class="hero-desc reveal" data-reveal data-reveal-delay="3">Computer Science student at Nile University, focused on Cybersecurity, Network Security, Vulnerability Assessment, and Penetration Testing.</p>
+
+      <div class="hero-actions reveal" data-reveal data-reveal-delay="4">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="assets/cv/Saif-Mohsen-CV.pdf" download class="btn btn-secondary cv-link">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 3v12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="m7 10 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 19.5h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          Download CV
+        </a>
+      </div>
+
+      <div class="hero-socials reveal" data-reveal data-reveal-delay="5">
+        <a href="https://github.com/2SaifMohsenn" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub profile">
+          <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.85.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.05 0-1.12.39-2.03 1.03-2.74-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.32 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.71 1.03 1.62 1.03 2.74 0 3.92-2.34 4.78-4.57 5.04.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.5A10.27 10.27 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z" fill="currentColor"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://linkedin.com/in/saif-mohsen-026265360" target="_blank" rel="noopener" class="icon-link" aria-label="LinkedIn profile">
+          <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3.5a1.96 1.96 0 1 0 0 3.92 1.96 1.96 0 0 0 0-3.92ZM20.44 20h-3.37v-5.9c0-1.4-.03-3.21-1.96-3.21-1.96 0-2.26 1.53-2.26 3.11V20H9.48V8.5h3.24v1.57h.05c.45-.85 1.55-1.75 3.2-1.75 3.42 0 4.05 2.25 4.05 5.18V20Z" fill="currentColor"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="mailto:s.mohsen2389@nu.edu.eg" class="icon-link" aria-label="Send an email">
+          <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Email</span>
+        </a>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section-kicker reveal" data-reveal>About</p>
+      <h2 class="section-title reveal" data-reveal>About Me</h2>
+
+      <div class="about-grid">
+        <div class="about-text reveal" data-reveal>
+          <p>I am a Computer Science student at Nile University, specializing in Biomedical Informatics and building my skills toward a career in Cybersecurity.</p>
+          <p>My journey started with networking fundamentals and Cisco CCNA, which helped me build a strong understanding of networks and infrastructure. I am currently expanding this foundation through Infrastructure &amp; Security training focused on Vulnerability Assessment and Penetration Testing.</p>
+          <p>Alongside cybersecurity, I have developed several software projects involving healthcare systems, REST APIs, databases, mobile applications, and backend development.</p>
+          <p>I enjoy understanding how systems work, identifying weaknesses, and continuously learning how to build and secure technology.</p>
+        </div>
+
+        <div class="about-stats reveal" data-reveal data-reveal-delay="1">
+          <div class="stat-card"><span class="stat-label">University</span><span class="stat-value">Nile University</span></div>
+          <div class="stat-card"><span class="stat-label">Degree</span><span class="stat-value">B.Sc. Computer Science</span></div>
+          <div class="stat-card"><span class="stat-label">Specialization</span><span class="stat-value">Biomedical Informatics</span></div>
+          <div class="stat-card"><span class="stat-label">Expected Graduation</span><span class="stat-value">2027</span></div>
+          <div class="stat-card"><span class="stat-label">Current Year</span><span class="stat-value">4th Year</span></div>
+          <div class="stat-card"><span class="stat-label">GPA</span><span class="stat-value">3.13 <small>/ 4.0</small></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CYBERSECURITY JOURNEY ========== -->
+  <section class="section section-alt" id="journey">
+    <div class="container">
+      <p class="section-kicker reveal" data-reveal>Progression</p>
+      <h2 class="section-title reveal" data-reveal>My Cybersecurity Journey</h2>
+      <p class="section-lead reveal" data-reveal>From programming foundations to hands-on offensive security training.</p>
+
+      <ol class="timeline">
+        <li class="timeline-item reveal" data-reveal>
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <h3>Computer Science</h3>
+            <p>Building a foundation in programming, software engineering, databases, and computer systems.</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal" data-reveal>
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <h3>Networking</h3>
+            <p>Developing networking knowledge and infrastructure fundamentals.</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal" data-reveal>
+          <div class="timeline-marker is-done"></div>
+          <div class="timeline-card">
+            <div class="timeline-card-head">
+              <h3>Cisco CCNA</h3>
+              <span class="badge badge-done">Completed</span>
+            </div>
+            <p>Built practical knowledge in networking, routing, switching, DHCP, and network infrastructure.</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal" data-reveal>
+          <div class="timeline-marker is-progress"></div>
+          <div class="timeline-card">
+            <div class="timeline-card-head">
+              <h3>Infrastructure &amp; Security</h3>
+              <span class="badge badge-progress"><i></i>In Progress</span>
+            </div>
+            <p class="timeline-role">Vulnerability Analyst &amp; Penetration Tester — DEPI</p>
+            <p>Training areas include:</p>
+            <ul class="chip-list">
+              <li>Networking Prerequisites</li>
+              <li>Network Pentesting</li>
+              <li>Web Application Pentesting</li>
+              <li>Android Pentesting</li>
+              <li>Covering Tracks &amp; Reporting</li>
+              <li>Capstone Project</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <p class="section-kicker reveal" data-reveal>Practical Background</p>
+      <h2 class="section-title reveal" data-reveal>Experience</h2>
+      <p class="section-lead reveal" data-reveal>Hands-on development internships alongside my cybersecurity training.</p>
+
+      <div class="experience-list">
+        <article class="experience-card reveal" data-reveal>
+          <div class="experience-head">
+            <div>
+              <h3>Full-Stack Web Developer Intern</h3>
+              <p class="experience-org">Elsewedy Company</p>
+            </div>
+            <span class="experience-date">2024 <small>· 4 Months</small></span>
+          </div>
+          <ul>
+            <li>Designed and implemented full-stack web applications, integrating responsive user interfaces with scalable server-side business logic.</li>
+            <li>Collaborated with cross-functional teams to streamline database connectivity and optimize data exchange pipelines.</li>
+            <li>Resolved critical bug fixes and maintained codebase performance across multiple web solutions.</li>
+          </ul>
+        </article>
+
+        <article class="experience-card reveal" data-reveal data-reveal-delay="1">
+          <div class="experience-head">
+            <div>
+              <h3>Web Developer Intern</h3>
+              <p class="experience-org">ATM Group Company</p>
+            </div>
+            <span class="experience-date">2025 <small>· 4 Months</small></span>
+          </div>
+          <ul>
+            <li>Configured, customized, and deployed fully functional business websites tailored to client requirements using WordPress.</li>
+            <li>Optimized site performance, page load efficiency, and responsive mobile rendering across multiple corporate portals.</li>
+            <li>Implemented foundational security updates, plugin hardening, and theme optimizations to protect client assets.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <p class="section-kicker reveal" data-reveal>Toolbox</p>
+      <h2 class="section-title reveal" data-reveal>Technical Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal" data-reveal>
+          <h3>Cybersecurity &amp; Networking</h3>
+          <ul class="chip-list">
+            <li>Kali Linux</li><li>Nmap</li><li>Network Security</li><li>Network Pentesting</li>
+            <li>Vulnerability Assessment</li><li>Penetration Testing</li><li>Cisco Packet Tracer</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal" data-reveal data-reveal-delay="1">
+          <h3>Programming</h3>
+          <ul class="chip-list">
+            <li>Python</li><li>C++</li><li>Java</li><li>JavaScript</li><li>PHP</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal" data-reveal data-reveal-delay="2">
+          <h3>Backend &amp; APIs</h3>
+          <ul class="chip-list">
+            <li>Django</li><li>Django REST Framework</li><li>REST APIs</li><li>MySQL</li><li>Postman</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal" data-reveal data-reveal-delay="3">
+          <h3>Mobile &amp; Frontend</h3>
+          <ul class="chip-list">
+            <li>React Native</li><li>Expo</li><li>HTML</li><li>CSS</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal" data-reveal data-reveal-delay="4">
+          <h3>Development Tools</h3>
+          <ul class="chip-list">
+            <li>Git</li><li>GitHub</li><li>VS Code</li><li>VMware</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS WRAPPER ========== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <p class="section-kicker reveal" data-reveal>Selected Work</p>
+      <h2 class="section-title reveal" data-reveal>Projects</h2>
+      <p class="section-lead reveal" data-reveal>Practical systems built while learning to design, secure, and connect real-world software.</p>
+    </div>
+
+    <!-- FEATURED: HEALTHCARE ECOSYSTEM -->
+    <div class="container">
+      <article class="featured-project reveal" data-reveal id="healthcare-ecosystem">
+        <div class="featured-project-top">
+          <div>
+            <span class="eyebrow-tag">Featured Project · University Team Project</span>
+            <h3>Healthcare Ecosystem</h3>
+            <p class="featured-subtitle">A Connected Healthcare Platform</p>
+          </div>
+          <div class="flow-badge" aria-hidden="false">
+            <span>Clinic</span><i>→</i><span>X-Ray Lab</span><i>→</i><span>Pharmacy</span>
+          </div>
+        </div>
+
+        <p class="featured-desc">A healthcare ecosystem designed to connect clinics, X-ray laboratories, and pharmacies while reducing paperwork and improving communication between healthcare services. The ecosystem consists of three interconnected systems, architected collaboratively by a university team.</p>
+
+        <div class="architecture-diagram" role="img" aria-label="Architecture flow: Doctor to Clinic EMR to X-Ray Referral to X-Ray Lab Report to Prescription to Online Pharmacy">
+          <div class="arch-step"><span class="arch-num">01</span><span>Doctor</span></div>
+          <div class="arch-arrow" aria-hidden="true"></div>
+          <div class="arch-step"><span class="arch-num">02</span><span>Clinic / EMR</span></div>
+          <div class="arch-arrow" aria-hidden="true"></div>
+          <div class="arch-step"><span class="arch-num">03</span><span>X-Ray Referral</span></div>
+          <div class="arch-arrow" aria-hidden="true"></div>
+          <div class="arch-step"><span class="arch-num">04</span><span>X-Ray Lab / Report</span></div>
+          <div class="arch-arrow" aria-hidden="true"></div>
+          <div class="arch-step"><span class="arch-num">05</span><span>Prescription</span></div>
+          <div class="arch-arrow" aria-hidden="true"></div>
+          <div class="arch-step arch-step-end"><span class="arch-num">06</span><span>Online Pharmacy</span></div>
+        </div>
+
+        <div class="featured-project-bottom">
+          <ul class="chip-list">
+            <li>React Native</li><li>Expo</li><li>Django</li><li>Django REST Framework</li><li>Python</li><li>MySQL</li><li>REST APIs</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" class="btn btn-secondary btn-small is-placeholder" data-placeholder-label="GitHub repository">
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.85.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.05 0-1.12.39-2.03 1.03-2.74-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.32 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.71 1.03 1.62 1.03 2.74 0 3.92-2.34 4.78-4.57 5.04.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.5A10.27 10.27 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z" fill="currentColor"/></svg>
+              View on GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- SUB PROJECTS -->
+    <div class="container">
+      <div class="project-grid">
+
+        <!-- OSRA CLINIC -->
+        <article class="project-card reveal" data-reveal id="osra-clinic">
+          <div class="project-mockup" aria-hidden="true">
+            <div class="mockup-phone">
+              <div class="mockup-notch"></div>
+              <div class="mockup-block mockup-block-lg"></div>
+              <div class="mockup-block"></div>
+              <div class="mockup-block mockup-block-sm"></div>
+              <div class="mockup-row"><div class="mockup-pill"></div><div class="mockup-pill"></div></div>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Osra Clinic Management System</h3>
+            <p>A clinic management system designed to organize patient, doctor, appointment, and electronic medical record workflows.</p>
+
+            <div class="role-groups">
+              <div class="role-group">
+                <h4>Patient</h4>
+                <ul><li>Account registration</li><li>Personal information</li><li>Appointment booking</li><li>Medical record access</li></ul>
+              </div>
+              <div class="role-group">
+                <h4>Doctor</h4>
+                <ul><li>View booked patients</li><li>Access patient information</li><li>Update Electronic Medical Records</li></ul>
+              </div>
+              <div class="role-group">
+                <h4>Admin</h4>
+                <ul><li>User management</li><li>Activity monitoring</li><li>System statistics</li></ul>
+              </div>
+            </div>
+
+            <ul class="chip-list chip-list-tight">
+              <li>React Native</li><li>Expo</li><li>Django</li><li>Django REST Framework</li><li>MySQL</li>
+            </ul>
+
+            <div class="project-links">
+              <a href="#" class="btn btn-ghost btn-small is-placeholder" data-placeholder-label="GitHub repository">
+                <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.85.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.05 0-1.12.39-2.03 1.03-2.74-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.32 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.71 1.03 1.62 1.03 2.74 0 3.92-2.34 4.78-4.57 5.04.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.5A10.27 10.27 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z" fill="currentColor"/></svg>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PHARME -->
+        <article class="project-card reveal" data-reveal id="pharme">
+          <div class="project-mockup" aria-hidden="true">
+            <div class="mockup-phone">
+              <div class="mockup-notch"></div>
+              <div class="mockup-row"><div class="mockup-pill mockup-pill-accent"></div><div class="mockup-pill"></div></div>
+              <div class="mockup-block"></div>
+              <div class="mockup-block mockup-block-sm"></div>
+              <div class="mockup-block mockup-block-sm"></div>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>PharMe — Online Pharmacy</h3>
+            <p>An online pharmacy platform for browsing medicines, managing prescriptions, placing orders, and handling inventory.</p>
+
+            <div class="role-groups role-groups-2">
+              <div class="role-group">
+                <h4>Customer</h4>
+                <ul><li>Browse medicines</li><li>Search products</li><li>Add items to cart</li><li>Manage prescriptions</li><li>Place orders</li><li>Cash on Delivery</li></ul>
+              </div>
+              <div class="role-group">
+                <h4>Admin</h4>
+                <ul><li>Medicine management</li><li>CRUD operations</li><li>User management</li><li>Inventory management</li><li>Low-stock monitoring</li><li>Restocking</li></ul>
+              </div>
+            </div>
+
+            <ul class="chip-list chip-list-tight">
+              <li>React Native</li><li>Expo</li><li>Django</li><li>Django REST Framework</li><li>MySQL</li>
+            </ul>
+
+            <div class="project-links">
+              <a href="https://github.com/2SaifMohsenn/Online_Medicine_Shop_2-" target="_blank" rel="noopener" class="btn btn-ghost btn-small">
+                <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.85.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.05 0-1.12.39-2.03 1.03-2.74-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.32 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.71 1.03 1.62 1.03 2.74 0 3.92-2.34 4.78-4.57 5.04.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.5A10.27 10.27 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z" fill="currentColor"/></svg>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- NETWORKING PROJECT -->
+    <div class="container">
+      <article class="network-project reveal" data-reveal id="network-lab">
+        <div class="network-project-text">
+          <span class="eyebrow-tag">Networking Foundation</span>
+          <h3>Cisco Network Infrastructure Lab</h3>
+          <p>A practical Cisco Packet Tracer network designed to demonstrate core networking and infrastructure concepts.</p>
+          <ul class="feature-list-inline">
+            <li>2 LANs</li><li>Cisco 2960 Switches</li><li>Cisco 2911 Routers</li><li>DHCP</li><li>Static Routing</li><li>Inter-LAN Communication</li>
+          </ul>
+          <p class="network-note">Designed and configured a multi-LAN network with DHCP and static routing to strengthen practical networking fundamentals.</p>
+          <ul class="chip-list chip-list-tight">
+            <li>Cisco Packet Tracer</li>
+          </ul>
+        </div>
+
+        <div class="topology-diagram" role="img" aria-label="Network topology: two LANs each connected through a Cisco 2960 switch to a Cisco 2911 router, routers linked together with static routing and DHCP">
+          <svg viewBox="0 0 560 320" width="100%" height="100%">
+            <g stroke="currentColor" stroke-width="1.4" fill="none" class="topo-lines">
+              <path d="M95 80 L95 140"/>
+              <path d="M95 140 L95 200"/>
+              <path d="M60 140 L95 140"/>
+              <path d="M130 140 L95 140"/>
+              <path d="M95 200 L230 200"/>
+              <path d="M330 200 L465 200"/>
+              <path d="M465 80 L465 140"/>
+              <path d="M465 140 L465 200"/>
+              <path d="M430 140 L465 140"/>
+              <path d="M500 140 L465 140"/>
+            </g>
+            <g class="topo-nodes">
+              <rect x="65" y="55" width="60" height="26" rx="4" class="topo-node"/>
+              <text x="95" y="72" text-anchor="middle" class="topo-label">LAN A</text>
+
+              <rect x="35" y="128" width="30" height="24" rx="3" class="topo-node topo-node-outline"/>
+              <text x="50" y="163" text-anchor="middle" class="topo-sub">PC</text>
+              <rect x="125" y="128" width="30" height="24" rx="3" class="topo-node topo-node-outline"/>
+              <text x="140" y="163" text-anchor="middle" class="topo-sub">PC</text>
+
+              <rect x="65" y="188" width="60" height="26" rx="4" class="topo-node"/>
+              <text x="95" y="205" text-anchor="middle" class="topo-label">2960</text>
+              <text x="95" y="228" text-anchor="middle" class="topo-sub">Switch</text>
+
+              <rect x="230" y="182" width="100" height="36" rx="6" class="topo-node topo-node-accent"/>
+              <text x="280" y="203" text-anchor="middle" class="topo-label topo-label-accent">2911 · 2911</text>
+              <text x="280" y="167" text-anchor="middle" class="topo-sub">DHCP · Static Routing</text>
+
+              <rect x="435" y="188" width="60" height="26" rx="4" class="topo-node"/>
+              <text x="465" y="205" text-anchor="middle" class="topo-label">2960</text>
+              <text x="465" y="228" text-anchor="middle" class="topo-sub">Switch</text>
+
+              <rect x="405" y="55" width="60" height="26" rx="4" class="topo-node"/>
+              <text x="465" y="72" text-anchor="middle" class="topo-label">LAN B</text>
+
+              <rect x="405" y="128" width="30" height="24" rx="3" class="topo-node topo-node-outline"/>
+              <text x="420" y="163" text-anchor="middle" class="topo-sub">PC</text>
+              <rect x="495" y="128" width="30" height="24" rx="3" class="topo-node topo-node-outline"/>
+              <text x="510" y="163" text-anchor="middle" class="topo-sub">PC</text>
+            </g>
+          </svg>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATIONS ========== -->
+  <section class="section section-alt" id="certifications">
+    <div class="container">
+      <p class="section-kicker reveal" data-reveal>Credentials</p>
+      <h2 class="section-title reveal" data-reveal>Certifications &amp; Training</h2>
+
+      <div class="cert-grid">
+        <div class="cert-card reveal" data-reveal>
+          <div class="cert-card-head">
+            <h3>Cisco CCNA</h3>
+            <span class="badge badge-done">Completed</span>
+          </div>
+          <p class="cert-org">Cisco Networking Academy</p>
+          <ul class="chip-list">
+            <li>Networking fundamentals</li><li>Routing</li><li>Switching</li><li>Network infrastructure</li><li>Cisco technologies</li>
+          </ul>
+        </div>
+
+        <div class="cert-card reveal" data-reveal data-reveal-delay="1">
+          <div class="cert-card-head">
+            <h3>Infrastructure &amp; Security</h3>
+            <span class="badge badge-progress"><i></i>In Progress</span>
+          </div>
+          <p class="cert-org">Vulnerability Analyst &amp; Penetration Tester — DEPI</p>
+          <ul class="chip-list">
+            <li>Prompt Engineering</li><li>Networking Prerequisites</li><li>Network Pentesting</li>
+            <li>Web Application Pentesting</li><li>Android Pentesting</li><li>Capstone</li><li>Covering Tracks &amp; Reporting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CURRENT FOCUS ========== -->
+  <section class="section" id="focus">
+    <div class="container">
+      <p class="section-kicker reveal" data-reveal>Right Now</p>
+      <h2 class="section-title reveal" data-reveal>Current Focus</h2>
+
+      <div class="focus-grid">
+        <div class="focus-card reveal" data-reveal>
+          <span class="focus-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 3 20 6.5V12c0 4.9-3.4 8.6-8 9.8-4.6-1.2-8-4.9-8-9.8V6.5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Cybersecurity</h3>
+          <p>Developing practical skills in vulnerability assessment and penetration testing.</p>
+        </div>
+        <div class="focus-card reveal" data-reveal data-reveal-delay="1">
+          <span class="focus-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22"><circle cx="5" cy="6" r="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="19" cy="6" r="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="18" r="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M6.8 7.3 11 16.2M17.2 7.3 13 16.2M7 6h10" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+          </span>
+          <h3>Network Security</h3>
+          <p>Strengthening networking and infrastructure knowledge.</p>
+        </div>
+        <div class="focus-card reveal" data-reveal data-reveal-delay="2">
+          <span class="focus-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg>
+          </span>
+          <h3>Penetration Testing</h3>
+          <p>Learning methodologies for network, web application, and Android security testing.</p>
+        </div>
+        <div class="focus-card reveal" data-reveal data-reveal-delay="3">
+          <span class="focus-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H12v18H6.5A2.5 2.5 0 0 1 4 18.5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H12v18h5.5a2.5 2.5 0 0 0 2.5-2.5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Continuous Learning</h3>
+          <p>Building practical projects and expanding cybersecurity knowledge.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MORE PROJECTS ========== -->
+  <section class="section section-alt" id="more-projects">
+    <div class="container">
+      <p class="section-kicker reveal" data-reveal>Also on GitHub</p>
+      <h2 class="section-title reveal" data-reveal>More Projects</h2>
+
+      <div class="more-projects-grid">
+        <article class="mini-project-card reveal" data-reveal>
+          <h3>E-Commerce Web Application</h3>
+          <p>A fully responsive e-commerce platform interface focused on modern UI design principles and cross-browser compatibility.</p>
+          <ul class="chip-list chip-list-tight">
+            <li>HTML</li><li>CSS</li><li>Responsive Design</li>
+          </ul>
+          <a href="#" class="btn btn-ghost btn-small is-placeholder" data-placeholder-label="GitHub repository">
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.85.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.05 0-1.12.39-2.03 1.03-2.74-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.32 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.71 1.03 1.62 1.03 2.74 0 3.92-2.34 4.78-4.57 5.04.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.5A10.27 10.27 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z" fill="currentColor"/></svg>
+            View on GitHub
+          </a>
+        </article>
+
+        <a href="https://github.com/2SaifMohsenn" target="_blank" rel="noopener" class="mini-project-card mini-project-more reveal" data-reveal data-reveal-delay="1">
+          <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.85.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.05 0-1.12.39-2.03 1.03-2.74-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.32 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.71 1.03 1.62 1.03 2.74 0 3.92-2.34 4.78-4.57 5.04.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.5A10.27 10.27 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z" fill="currentColor"/></svg>
+          <span>View more on GitHub</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CV CTA ========== -->
+  <section class="section cv-cta" id="cv">
+    <div class="container cv-cta-inner reveal" data-reveal>
+      <h2>Want to know more?</h2>
+      <p>Download my CV to explore my education, technical skills, projects, certifications, and experience.</p>
+      <a href="assets/cv/Saif-Mohsen-CV.pdf" download class="btn btn-primary cv-link">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 3v12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="m7 10 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 19.5h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        Download CV
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <p class="section-kicker reveal" data-reveal>Get in Touch</p>
+      <h2 class="section-title reveal" data-reveal>Let's Connect</h2>
+      <p class="section-lead reveal" data-reveal>I'm always open to learning opportunities, cybersecurity internships, projects, and professional connections.</p>
+
+      <div class="contact-grid">
+        <div class="contact-links reveal" data-reveal>
+          <a href="mailto:s.mohsen2389@nu.edu.eg" class="contact-link">
+            <span class="contact-icon"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span>
+              <strong>Email</strong>
+              <small>s.mohsen2389@nu.edu.eg</small>
+            </span>
+          </a>
+          <a href="https://linkedin.com/in/saif-mohsen-026265360" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-icon"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3.5a1.96 1.96 0 1 0 0 3.92 1.96 1.96 0 0 0 0-3.92ZM20.44 20h-3.37v-5.9c0-1.4-.03-3.21-1.96-3.21-1.96 0-2.26 1.53-2.26 3.11V20H9.48V8.5h3.24v1.57h.05c.45-.85 1.55-1.75 3.2-1.75 3.42 0 4.05 2.25 4.05 5.18V20Z" fill="currentColor"/></svg></span>
+            <span>
+              <strong>LinkedIn</strong>
+              <small>linkedin.com/in/saif-mohsen-026265360</small>
+            </span>
+          </a>
+          <a href="https://github.com/2SaifMohsenn" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-icon"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.85.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.05 0-1.12.39-2.03 1.03-2.74-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.32 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.71 1.03 1.62 1.03 2.74 0 3.92-2.34 4.78-4.57 5.04.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.5A10.27 10.27 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z" fill="currentColor"/></svg></span>
+            <span>
+              <strong>GitHub</strong>
+              <small>github.com/2SaifMohsenn</small>
+            </span>
+          </a>
+        </div>
+
+        <form class="contact-form reveal" data-reveal data-reveal-delay="1" id="contact-form" novalidate>
+          <div class="form-row">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" autocomplete="name" required>
+          </div>
+          <div class="form-row">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" autocomplete="email" required>
+          </div>
+          <div class="form-row">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-hint">Opens your email client with the message pre-filled.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="brand-text">Saif Mohsen</span>
+      <p>Computer Science Student | Cybersecurity Enthusiast</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="footer-socials">
+      <a href="https://github.com/2SaifMohsenn" target="_blank" rel="noopener" class="social-link" aria-label="GitHub profile">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.85.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.05 0-1.12.39-2.03 1.03-2.74-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.32 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.71 1.03 1.62 1.03 2.74 0 3.92-2.34 4.78-4.57 5.04.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.5A10.27 10.27 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z" fill="currentColor"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/saif-mohsen-026265360" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn profile">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3.5a1.96 1.96 0 1 0 0 3.92 1.96 1.96 0 0 0 0-3.92ZM20.44 20h-3.37v-5.9c0-1.4-.03-3.21-1.96-3.21-1.96 0-2.26 1.53-2.26 3.11V20H9.48V8.5h3.24v1.57h.05c.45-.85 1.55-1.75 3.2-1.75 3.42 0 4.05 2.25 4.05 5.18V20Z" fill="currentColor"/></svg>
+      </a>
+      <a href="mailto:s.mohsen2389@nu.edu.eg" class="social-link" aria-label="Send an email">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2026 Saif Mohsen. All rights reserved.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
